@@ -18,6 +18,8 @@ const { authenticateRoute } = require("src/helpers/auth");
  */
 router
   .route(`/searches`)
-  .post(validate(searchSchema.create), searchController.create);
+  .post(
+    validate(searchSchema.create), 
+    searchController.create);
 
 module.exports = router;
